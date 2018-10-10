@@ -7,19 +7,20 @@
 {% endblock title %}
 	
 {% block content %}
- 	<div class="jumbotron">
- 	<div class="container">
+ 	
+ 	<div class="container ">
+ 		<div class="jumbotron gray" >
 		
-		  <h1 class="display-4">{{car.make}}</h1>
-		  <p class="lead">Model: {{car.model}} - {{car.year}} </p>
+		  <h1 class="display-4 black">{{car.make}}</h1>
+		  <p class="lead white">Model: {{car.model}} - {{car.year}} </p>
 		  <hr class="my-4">
 		  {% if car.car_img %}
 		  <img src="{{car.car_img.url}}" alt="Card image cap">
 		  {% endif %}
 		  <hr>
 		  <p class="lead">
-		    <a class="btn btn-primary btn-lg" href="{% url 'car-update' car.id %}" role="button">Update</a>
-		    <a class="btn btn-primary btn-lg" href="{% url 'car-delete' car.id %}" role="button">Delete</a>
+		    <a class="btn btn-primary btn-lg " href="{% url 'car-update' car.id %}" role="button"  style="background-color:green; border: solid green 1px; "><i class="fas fa-edit"></i>Update</a>
+		    <a class="btn btn-primary btn-lg" href="{% url 'car-delete' car.id %}" role="button" style="background-color:red; border: solid red 1px;"><i class="fas fa-trash-alt"></i>Delete</a>
 		  </p>
 		</div>
 	</div>

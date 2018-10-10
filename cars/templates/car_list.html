@@ -11,16 +11,16 @@
 <div class="row justify-content-around">
 
 	{% for car in cars %}
-	<div class="my-2 col-12 col-md-6 col-lg-3 d-flex align-items-stretch">
+	<div  class="my-2 col-12 col-md-6 col-lg-3 d-flex align-items-stretch">
 	
-		<div class="card">
+		<div id= "cardblack" class="card ">
 		{% if car.car_img %}
 		  <img class="card-img-top" src="{{car.car_img.url}}" alt="Card image cap">
 		{% endif %}
-		  <div class="card-body">
-		    <h5 class="card-title">{{car.make}}  - {{car.year}}</h5>
+		  <div  class="card-body">
+		    <h5 class="card-title black">{{car.make}}  - {{car.year}}</h5>
 		    <p class="card-text">{{car.model}}</p>
-		    <a href="{{car.get_absolute_url}}" class="btn btn-primary">Read More!</a>
+		    <a href="{{car.get_absolute_url}}" class="btn btn-primary green">Edit</a>
 		  </div>
 		</div>
 	</div>

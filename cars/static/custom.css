@@ -1,0 +1,32 @@
+body, html{
+	background-image: url("./car1.jpg");
+	background-repeat: no-repeat; 
+  	background-size: cover;
+}
+#cardblack{
+	background-color: grey;
+	opacity: 0.80;
+	color: white;
+}
+.green{
+	background-color: green;
+	border:solid green 1px;
+}
+.white{
+	color: white;
+	opacity: 0.85;
+	font-size: 25px;
+}
+.black{
+	color: black;
+	font-weight: bold;
+
+}
+.gray{
+	background-color: gray;
+	border:solid gray 1px;
+	opacity: 0.95;
+}
+.black{
+	color: black;
+}
